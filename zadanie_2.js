@@ -425,14 +425,14 @@
 
 // console.log(includes([1, 2, 3, 4, 5], 3));
 
-const logins = ["a", "b", "c", "d"];
+// const logins = ["a", "b", "c", "d"];
 
-const find = function (allLogins, loginToFind) {
-  return allLogins.includes(loginToFind)
-    ? `Знайшли ${loginToFind}`
-    : `${loginToFind} такого не найшли`;
-};
-console.log(find(logins, "a"));
-console.log(find(logins, "s"));
-console.log(find(logins, "d"));
-console.log(find(logins, "r"));
+// const find = function (allLogins, loginToFind) {
+//   return allLogins.includes(loginToFind)
+//     ? `Знайшли ${loginToFind}`
+//     : `${loginToFind} такого не найшли`;
+// };
+// console.log(find(logins, "a"));
+// console.log(find(logins, "s"));
+// console.log(find(logins, "d"));
+// console.log(find(logins, "r"));
