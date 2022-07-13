@@ -1,29 +1,24 @@
-function processCall(recipient, onAvailable, onNotAvailable) {
-  // Імітуємо доступність абонента випадковим числом
-  const isRecipientAvailable = Math.random() > 0.5;
-
-  if (!isRecipientAvailable) {
-    onNotAvailable(recipient);
-    return;
+function findLongestWord(string) {
+  // Change code below this line
+  const stringSplit = string.split(" ");
+  // console.log(stringSplit);
+  let longestWord = stringSplit[0];
+  for (const word of string) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
   }
+  return longestWord;
+  // string = string.split(" ");
+  // let longWord = string[0];
+  // for (const word of string) {
+  //   if (word.length > longWord.length) {
+  //     longWord = word;
+  //   }
+  // }
+  // return longWord;
 
-  onAvailable(recipient);
+  // Change code above this line
 }
-
-function takeCall(name) {
-  console.log(`З'єднуємо з ${name}, очікуйте...`);
-  // Логіка прийняття дзвінка
-}
-
-function activateAnsweringMachine(name) {
-  console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
-  // Логіка активації автовідповідача
-}
-
-function leaveHoloMessage(name) {
-  console.log(`Абонент ${name} недоступний, записуємо голограму.`);
-  // Логіка запису голограми
-}
-
-processCall("Манго", takeCall, activateAnsweringMachine);
-processCall("Полі", takeCall, leaveHoloMessage);
+console.log(findLongestWord("Google do a roll"));
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
