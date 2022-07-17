@@ -97,6 +97,8 @@
 
 // function getExtremeElements(array) {
 //   // Change code below this line
+//   //   return [array[0], array[array.length - 1]];
+
 //   array.splice(1, array.length - 2);
 //   return array;
 //   // Change code above this line
@@ -237,23 +239,17 @@
 
 // function findLongestWord(string) {
 //   // Change code below this line
-//   let words = string.split(" ");
-//   let wordLength = 0;
-//   let longestWord;
-
-//   for (let i = 0; i < words.length; i += 1) {
-//     wordLength = words[1].length;
-
-//     if (words[i].length > wordLength) {
-//       longestWord = words[i];
-
-//       return longestWord;
+//   const stringSplit = string.split(" ");
+//   let biggestWord = [];
+//   for (let i = 0; i < stringSplit.length; i += 1) {
+//     if (biggestWord.length < stringSplit[i].length) {
+//       biggestWord = stringSplit[i];
 //     }
 //   }
+//   return biggestWord;
 //   // Change code above this line
 // }
-
-// console.log(findLongestWord("The quick brown fox jumpeds over the lazy dog"));
+// console.log(findLongestWord("May the force be with you"));
 
 // задача 2.22 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
